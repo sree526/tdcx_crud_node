@@ -1,24 +1,22 @@
 var express = require('express');
 var app = express();
-var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
+var cors = require('cors');
 var port = 8080;
-var db = 'mongodb://localhost/example';
+var db = 'mongodb://localhost:27017/tasks';
 
-var books = require('./routes/books');
+var tasks = require('./routes/tasks');
+var login = require('./routes/login');
 
-mongoose.connect(db);
+mongoose.connect(db, { useNewUrlParser: true });
+app.use(cors());
+app.use(express.json());
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({
-    extended: true
-}));
-
-app.use('/books', books);
-
+app.use('/tasks', tasks);
+app.use('/login',login);
 app.get('/', function(req, res){
-    console.log('app starting on port: '+port)
-    res.send('tes express nodejs mongodb');
+    console.log('app starting on port: '+port);
+    res.send('test express nodejs mongodb');
 });
 
 app.listen(port, function(){
