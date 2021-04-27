@@ -1,0 +1,57 @@
+.topcards {
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 12px;
+    opacity: 1;
+}
+.cardtitle{
+    color: #537178;
+    font-size:26px;
+}
+@media (min-width: 768px) {
+    .topcards {
+        min-height:158px;
+        max-height:158px;
+    }
+}
+.lineText {
+    text-decoration: line-through;
+    color: #8F9EA2;
+    font-size:14px;
+}
+.textColor{
+    color: #8F9EA2;
+    font-size:14px;
+}
+.taskHeader{
+    text-align: left;
+    font-size: 24px;
+    letter-spacing: 0px;
+    color: #537178;
+    opacity: 1;
+}
+.taskText{
+    color:#5285EC;
+    font-size:24px;
+    text-decoration: line-through;
+}
+.taskColor{
+    color:#5285EC;
+    font-size:24px;
+}
+.btnColor {
+    background-color:#5285EC;
+}
+.underline{
+    border-bottom: 1px solid #E8E8E8;
+}
+.taskHeaderwithline{
+    text-align: left;
+    font-size: 24px;
+    letter-spacing: 0px;
+    color: #537178;
+    opacity: 1;
+    text-decoration: line-through;
+}
+.notaskCard{
+    margin-top:150px;
+}

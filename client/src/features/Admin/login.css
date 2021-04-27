@@ -1,0 +1,17 @@
+.card {
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 12px;
+    opacity: 1;
+}
+.container {
+    background-color:#F4F4F6;
+}
+.btnColor {
+    background-color:#5285EC;
+}
+.loginTitle{
+    text-align: left;
+    letter-spacing: 0;
+    color: #537178;
+    opacity: 1;
+}
