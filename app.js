@@ -16,7 +16,7 @@ app.use('/tasks', tasks);
 app.use('/login',login);
 app.get('/', function(req, res){
     console.log('app starting on port: '+port);
-    res.send('test express nodejs mongodb');
+    res.redirect('/login');
 });
 if(process.env.NODE_ENV==="production"){
     app.use(express.static('client/build'));
