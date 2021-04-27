@@ -1,19 +1,4 @@
-# Node.js mongoose express CRUD
-Node.js CRUD application based on the MongoDB database design and Express.js framework
-
-This Node.js CRUD code use 
-- Express.js framework
-- mongoose ORM
-```
-npm install --save express mongoose body-parser
-```
-
-### Note:
-
-Create collection name 'books' on 'example' database at MongoDB
-```
-use example
-```
-```
-db.createCollection("books")
-```
+1. Checkout project to your local
+2. npm install
+3. npm run loginScript which will insert user to login. Once that is done you can login using username: test and password: test.
+4. npm start
