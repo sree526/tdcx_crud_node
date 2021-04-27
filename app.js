@@ -3,7 +3,7 @@ var app = express();
 var mongoose = require('mongoose');
 var cors = require('cors');
 var port = process.env.PORT || 8080;
-var db = process.env.MONGODB_URI||'mongodb://localhost:27017/tasks';
+var db = process.env.MONGODB_URI||'mongodb+srv://admin:admin@sampleapp.bnnnb.mongodb.net/tasks?retryWrites=true&w=majority';
 
 var tasks = require('./routes/tasks');
 var login = require('./routes/login');
